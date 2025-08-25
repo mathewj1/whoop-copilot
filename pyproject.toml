@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whoop-copilot"
+version = "0.1.0"
+description = "Combine WHOOP data with Copilot Money data"
+requires-python = ">=3.9"
+
+[project.scripts]
+whoop-copilot = "whoop_copilot.cli:cli"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
