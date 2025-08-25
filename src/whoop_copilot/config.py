@@ -39,10 +39,10 @@ def write_tokens(tokens: Dict[str, Any]) -> None:
 
 
 def get_default_redirect_port() -> int:
-    port_str = get_env("REDIRECT_PORT", "8765")
+    port_str = get_env("REDIRECT_PORT", "8080")
     try:
         return int(port_str)
     except Exception:
-        return 8765
+        return 8080
 
 
